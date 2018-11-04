@@ -110,7 +110,8 @@
                     </h2>
                     <hr>
                     <p style="text-align: center">Fill out this form to get updates about WiE, we love meeting new people!</p>
-                    <form action="/form-handler-nodb.php" role = "form" method="post"  > <!--role="form"-->
+                    <!--
+                    <form action="/form-handler-nodb.php" role = "form" method="post"  > <!--role="form"
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Name</label>
@@ -120,10 +121,6 @@
                                 <label>Email Address</label>
                                 <input type="email" class="form-control">
                             </div>
-                           <!-- <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
-                            </div> -->
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
@@ -133,9 +130,15 @@
                                 <input type="hidden" name="save" value="contact">
                                 <button type="submit" class="btn btn-default">Submit</button>
                             </div>
-                            
-                        </div>
+                            -->
+                    <form method="POST" action="https://formspree.io/sgr19@pitt.edu">
+                        <input type="email" name="email" placeholder="Your email">
+                        <textarea name="message" placeholder="Test Message"></textarea>
+                        <button type="submit">Submit</button>
                     </form>
+                            
+                        <!--</div>
+                    </form> -->
                 </div>
             </div>
         </div>
